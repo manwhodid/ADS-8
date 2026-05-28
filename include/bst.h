@@ -111,8 +111,8 @@ class BST {
         addNode(&root, val);
     }
 
-    bool search(T val) {
-        return findNode(root, val);
+    int search(T val) {
+    return findNode(root, val);
     }
 
     int depth() {
