@@ -43,19 +43,19 @@ class BST {
         }
     }
 
-    bool findNode(Node* cur, T val) {
+    int findNode(Node* cur, T val) {
         if (cur == nullptr) {
-            return false;
+            return 0;
         }
-
+    
         if (cur->key == val) {
-            return true;
+            return cur->cnt;
         }
-
+    
         if (val < cur->key) {
             return findNode(cur->left, val);
         }
-
+    
         return findNode(cur->right, val);
     }
 
