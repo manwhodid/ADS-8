@@ -47,15 +47,15 @@ class BST {
         if (cur == nullptr) {
             return 0;
         }
-    
+
         if (cur->key == val) {
             return cur->cnt;
         }
-    
+
         if (val < cur->key) {
             return findNode(cur->left, val);
         }
-    
+
         return findNode(cur->right, val);
     }
 
