@@ -1,18 +1,17 @@
 // Copyright 2021 NNTU-CS
 #include <string>
+
 #include "bst.h"
 
-void makeTree(BST<std::string>& tree,
-              const char* filename);
-
+void makeTree(BST<std::string>& tree, const char* filename);
 void printFreq(BST<std::string>& tree);
 
 int main() {
-    BST<std::string> tree;
+    BST<std::string> derevo;
 
-    makeTree(tree, "src/war_peace.txt");
+    makeTree(derevo, "src/war_peace.txt");
 
-    printFreq(tree);
+    printFreq(derevo);
 
     return 0;
 }
